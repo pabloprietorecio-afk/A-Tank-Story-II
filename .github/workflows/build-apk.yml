@@ -78,13 +78,13 @@ jobs:
           GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
         run: |
           mkdir -p build
-          godot --headless --export-debug "Android" "build/ATankStory-${VERSION_NAME}.apk"
+          godot --headless --export-debug "Android" "build/ATankStory2-${VERSION_NAME}.apk"
           ls -la build
 
       - name: Publicar en Releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "v${VERSION_NAME}" "build/ATankStory-${VERSION_NAME}.apk" \
-            --title "A Tank Story ${VERSION_NAME}" \
+          gh release create "v${VERSION_NAME}" "build/ATankStory2-${VERSION_NAME}.apk" \
+            --title "A Tank Story II ${VERSION_NAME}" \
             --notes "Compilación automática ${VERSION_NAME} (versionCode ${VERSION_CODE}), commit ${GITHUB_SHA::7}"
