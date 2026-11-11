@@ -41,6 +41,11 @@ jobs:
           timeout 900 godot --headless --path . --audio-driver Dummy res://tools/verify/shots.tscn 2>&1 | tee logic.log || true
           grep -E "^(NAV|STORY|CAMPAIGN|REACH|CLIMB|TUTORIAL|SKY|AI|CTF|FIT)" logic.log || true
 
+      - name: Personaje a pie (sin gráficos)
+        run: |
+          timeout 300 godot --headless --path . --audio-driver Dummy --script res://tools/verify/foot_check.gd 2>&1 | tee foot.log || true
+          grep -q "FOOT RESULT fallos: 0" foot.log || { echo "El personaje a pie falla"; grep "^FOOT" foot.log; exit 1; }
+
       - name: Capturas
         run: |
           timeout 1500 xvfb-run -a -s "-screen 0 1280x720x24" godot --path . --audio-driver Dummy --rendering-driver vulkan --rendering-method mobile --resolution 1280x720 res://tools/verify/shots.tscn 2>&1 | tee run.log || true

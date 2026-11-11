@@ -257,6 +257,7 @@ func _page_mode() -> void:
 	_button(Loc.t("SUPERVIVENCIA — oleadas sin fin%s") % (Loc.t("  (récord: oleada %d)") % best if best > 0 else ""), func() -> void: _choose_mode(GameSession.Mode.SURVIVAL), true, TINT_PLAY)
 	_group_gap()
 	_button(Loc.t("%sTUTORIAL — aprende a manejar el tanque") % ("✔ " if GameSession.tutorial_completed() else ""), _play_tutorial, true, TINT_TUTORIAL)
+	_button(Loc.t("PRUEBA A PIE — personaje fuera del tanque"), func() -> void: get_tree().change_scene_to_file("res://levels/foot_test.tscn"), true, TINT_TUTORIAL)
 	_group_gap()
 	_button(Loc.t("OPCIONES — dificultad, sonido y ayudas"), _page_audio, true, TINT_OPTIONS)
 	_group_gap()
