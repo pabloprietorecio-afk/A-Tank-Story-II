@@ -1,0 +1,69 @@
+air_clear|Luftangriff abgewehrt. Der Himmel ist frei.
+air_phase|Luftangriff! Feindliche Jäger und Bomber im Anflug. Holt sie runter!
+armor_low|Panzerung kritisch! Noch ein Treffer und es ist vorbei!
+bonus|Bonus eingesammelt! Gut gemacht, Kommandant.
+cease_fire|Feuer einstellen! Feuer einstellen! Da drin sind Gefangene!
+commander|Feindlicher Kommandant ausgeschaltet. Sein Angriff bricht zusammen.
+flag_capture|Flagge erobert! Hervorragende Arbeit!
+flag_lost|Der Feind hat unsere Flagge! Holt sie zurück!
+flag_taken|Sie haben die feindliche Flagge! Bringen Sie sie zur Basis!
+hit_1|Wir sind getroffen!
+hit_2|Wir stehen unter Beschuss!
+kill_1|Ziel zerstört!
+kill_2|Volltreffer!
+kill_3|Feindlicher Panzer erledigt!
+liberation|Der Stacheldraht ist gefallen. Die Gefangenen sind frei!
+locked|Ziel erfasst.
+missile|Rakete abgefeuert!
+mission_fail|Mission gescheitert. Wir haben den Panzer verloren.
+mission_start|Die Mission beginnt. Gute Jagd, Kommandant.
+mission_win|Mission erfüllt! Hervorragende Arbeit.
+objective|Ziel zerstört.
+pickup|Nachschub aufgenommen.
+radar_1|Kontakt! Feindliche Panzer auf dem Radar.
+radar_2|Das Radar zeigt Feinde voraus. Bleibt wachsam.
+raid_1|Feindliche Bomber über uns! Raus aus der roten Zone!
+raid_2|Luftangriff! Bewegung, Bewegung, Bewegung!
+reinforcements|Feindliche Verstärkung im Anmarsch.
+shot_down_1|Flugzeug abgeschossen!
+shot_down_2|Einer weniger!
+strike_1|Luftschlag angefordert. Köpfe runter.
+strike_2|Bomber sind unterwegs. Gehen Sie in Deckung.
+strike_denied|Anforderung abgelehnt. Das Ziel ist zu nah an Ihrer Position.
+wave_clear|Welle abgewehrt. Nachladen und reparieren.
+wave_start|Neue Welle im Anmarsch. Haltet durch.
+follow_on|Alle zu mir! Verstanden, wir folgen Ihnen.
+follow_off|Alle frei. Handelt nach eigenem Ermessen.
+focus_fire|Alle auf mein Ziel! Feuer!
+focus_none|Kein Ziel in Sicht.
+tut_move_a|Hier ist die Basis. Wir fangen an. Tippen Sie auf die linke Seite des Bildschirms und schieben Sie nach oben. Fahren Sie bis zur gelben Bake.
+tut_move_b|Gut. Jetzt rückwärts. Ziehen Sie den Joystick nach unten und fahren Sie ein paar Meter zurück.
+tut_turn|Um die Wanne zu drehen, bewegen Sie den Joystick nach links oder rechts. Fahren Sie im Zickzack durch die drei Baken.
+tut_turret|Der Turm. Ziehen Sie den Finger über die rechte Bildschirmhälfte und bringen Sie das Fadenkreuz auf die drei Ziele.
+tut_fire_a|Zielen Sie auf eine Scheibe und drücken Sie die Feuertaste.
+tut_fire_b|Die Kanone lädt nach. Der Balken unter dem Fadenkreuz füllt sich. Wenn er grün ist, schießen Sie, bis eine Scheibe zerstört ist.
+tut_easy_a|Einfache Fahrt. Beim Vorwärtsfahren folgt die Wanne dem Rohr. Zielen Sie auf die Bake und schieben Sie einfach nach vorn.
+tut_easy_b|Man kann sie in den Einstellungen unter einfache Fahrt ausschalten. Fahren Sie genauso zur zweiten Bake.
+tut_camera|Drücken Sie die Kamerataste, um die Ansicht zu wechseln: Kabine, Heck und weites Heck.
+tut_radar|Das Radar. Die Punkte sind Feinde. Die blauen Quadrate sind Verbündete. Die Raute ist Ihr Ziel. Ringe sind Gebäude mit Belohnung, Kreuze sind Belohnungen. Fahren Sie zur Raute.
+tut_enemy_a|Feindlicher Übungspanzer, stillstehend. Zerstören Sie ihn. Dafür sind mehrere Schüsse nötig.
+tut_enemy_b|Jetzt ein fahrender Panzer. Zielen Sie ein Stück voraus und zerstören Sie ihn.
+tut_assist_a|Automatisches Zielen. Öffnen Sie die Einstellungen, schalten Sie es ein und drücken Sie weiter.
+tut_assist_b|Führen Sie das Fadenkreuz über den Feind. Er wird von selbst erfasst, und das Fadenkreuz wird orange.
+tut_assist_c|Erfasst. Über dem Fadenkreuz sehen Sie seine Panzerung und seinen Angriff. Drücken Sie Ziel lösen, um ihn loszulassen.
+tut_zoom_a|Drücken Sie Zoom, um das Fernglas zu benutzen.
+tut_zoom_b|Die Tasten Rakete und Flugzeug erscheinen nur mit Zoom. Treffen Sie das ferne Ziel.
+tut_missile|Gelenkte Rakete. Erfassen Sie den Feind mit dem Fadenkreuz und drücken Sie bei aktivem Zoom Rakete.
+tut_strike_a|Alliierter Luftschlag. Zielen Sie bei aktivem Zoom auf das nahe Depot und drücken Sie Flugzeug.
+tut_strike_b|Abgelehnt. Unter dreißig Metern würden die Bomben Sie treffen. Fordern Sie ihn auf dem fernen Depot an.
+tut_strike_c|Fordern Sie ihn jetzt auf dem nahen Depot an und hören Sie, was die Basis antwortet.
+tut_raid|Feindlicher Bombenangriff. Wenn Sie die rote Zone sehen, verlassen Sie sie, bevor der Countdown null erreicht.
+tut_damage_a|Schaden. Ein Feind wird auf Sie schießen. Achten Sie unten auf Ihren Panzerungsbalken.
+tut_damage_b|Sammeln Sie die grüne Kiste ein, indem Sie darüberfahren. Sie repariert Ihre Panzerung.
+tut_damage_c|Sammeln Sie die blaue Kiste ein. Schnellladen für zwanzig Sekunden.
+tut_follow_a|Alle zu mir. Drücken Sie links das Symbol mit den drei Pfeilen, und Ihre Verbündeten folgen Ihnen.
+tut_follow_b|Fahren Sie jetzt zur gelben Bake. Ihre Verbündeten kommen mit und begleiten Sie.
+tut_focus_a|Alle auf das Ziel. Zielen Sie auf den feindlichen Panzer und drücken Sie das Zielsymbol mit den zwei Pfeilen.
+tut_focus_b|Alle Ihre Verbündeten greifen an, was Sie markiert haben. Warten Sie, bis sie es zerstören.
+tut_final|Letzter Kampf. Zerstören Sie mit Ihren zwei Verbündeten die drei feindlichen Panzer und das Depot. Nutzen Sie alles, was Sie gelernt haben.
+tut_end|Tutorial abgeschlossen. Gut gemacht. Jetzt können Sie die Kampagne beginnen.

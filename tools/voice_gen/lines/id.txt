@@ -1,0 +1,69 @@
+air_clear|Serangan udara berhasil dipukul mundur. Langit sudah bersih.
+air_phase|Serangan udara! Pesawat tempur dan pembom musuh mendekat. Tembak jatuh mereka!
+armor_low|Baja kritis! Satu tembakan lagi dan tamat!
+bonus|Bonus diambil! Kerja bagus, Komandan.
+cease_fire|Berhenti menembak! Berhenti menembak! Ada tawanan di dalam!
+commander|Komandan musuh tewas. Serangan mereka runtuh.
+flag_capture|Bendera direbut! Kerja yang luar biasa!
+flag_lost|Musuh membawa bendera kita! Rebut kembali!
+flag_taken|Anda membawa bendera musuh! Bawa ke markas!
+hit_1|Kita terkena tembakan!
+hit_2|Kita diserang!
+kill_1|Sasaran hancur!
+kill_2|Tepat sasaran!
+kill_3|Tank musuh tumbang!
+liberation|Kawat berduri sudah runtuh. Para tawanan bebas!
+locked|Sasaran terkunci.
+missile|Rudal diluncurkan!
+mission_fail|Misi gagal. Kita kehilangan tank.
+mission_start|Misi dimulai. Selamat berburu, Komandan.
+mission_win|Misi selesai! Kerja yang luar biasa.
+objective|Sasaran hancur.
+pickup|Perbekalan diambil.
+radar_1|Kontak! Tank musuh di radar.
+radar_2|Radar menunjukkan musuh di depan. Tetap waspada.
+raid_1|Pembom musuh di atas kita! Keluar dari zona merah!
+raid_2|Serangan udara! Bergerak, bergerak, bergerak!
+reinforcements|Bala bantuan musuh mendekat.
+shot_down_1|Pesawat tertembak jatuh!
+shot_down_2|Satu lagi berkurang!
+strike_1|Serangan udara diminta. Tundukkan kepala.
+strike_2|Pembom dalam perjalanan. Menjauhlah.
+strike_denied|Permintaan ditolak. Sasaran terlalu dekat dengan posisi Anda.
+wave_clear|Gelombang dipukul mundur. Isi ulang dan perbaiki.
+wave_start|Gelombang baru mendekat. Bertahanlah.
+follow_on|Semua ikut saya! Dimengerti, kami mengikuti Anda.
+follow_off|Semua bebas. Bertindaklah sesuai penilaian kalian.
+focus_fire|Semua ke sasaran saya! Tembak!
+focus_none|Tidak ada sasaran terlihat.
+tut_move_a|Ini markas. Kita mulai. Sentuh sisi kiri layar dan dorong ke atas. Pergilah ke tanda kuning.
+tut_move_b|Bagus. Sekarang mundur. Tarik joystick ke bawah dan mundur beberapa meter.
+tut_turn|Untuk memutar badan tank, gerakkan joystick ke kiri atau kanan. Lewati ketiga tanda dengan berkelok-kelok.
+tut_turret|Menara. Geser jari di separuh layar sebelah kanan dan arahkan bidik ke tiga sasaran.
+tut_fire_a|Bidik satu sasaran dan tekan tombol tembak.
+tut_fire_b|Meriam sedang diisi ulang. Bilah di bawah bidik terisi. Saat sudah hijau, tembak sampai satu sasaran hancur.
+tut_easy_a|Gerak mudah. Saat maju, badan tank mengikuti meriam. Bidik tanda dan cukup dorong ke depan.
+tut_easy_b|Bisa dimatikan di pengaturan, di bagian gerak mudah. Pergilah dengan cara yang sama ke tanda kedua.
+tut_camera|Tekan tombol kamera untuk mengganti tampilan: kabin, belakang, dan belakang jauh.
+tut_radar|Radar. Titik adalah musuh. Kotak biru adalah sekutu. Belah ketupat adalah sasaran Anda. Cincin adalah bangunan berhadiah, dan tanda silang adalah hadiah. Pergilah ke belah ketupat.
+tut_enemy_a|Tank musuh latihan, diam. Hancurkan. Perlu beberapa tembakan.
+tut_enemy_b|Sekarang tank yang bergerak. Bidik sedikit di depannya dan hancurkan.
+tut_assist_a|Bidik otomatis. Buka pengaturan, aktifkan, lalu tekan lanjut.
+tut_assist_b|Lewatkan bidik di atas musuh. Musuh terkunci sendiri dan bidik berubah oranye.
+tut_assist_c|Terkunci. Di atas bidik Anda melihat baja dan serangannya. Tekan lepas sasaran untuk melepaskannya.
+tut_zoom_a|Tekan zoom untuk memakai teropong.
+tut_zoom_b|Tombol rudal dan pesawat hanya muncul dengan zoom. Kenai sasaran yang jauh.
+tut_missile|Rudal terpandu. Kunci musuh dengan bidik dan, dengan zoom aktif, tekan rudal.
+tut_strike_a|Pengeboman sekutu. Dengan zoom aktif, bidik depot terdekat dan tekan pesawat.
+tut_strike_b|Ditolak. Di bawah tiga puluh meter, bom akan mengenai Anda. Mintalah di depot yang jauh.
+tut_strike_c|Sekarang mintalah di depot terdekat dan dengarkan jawaban markas.
+tut_raid|Pengeboman musuh. Saat Anda melihat zona merah, keluarlah sebelum hitungan mundur mencapai nol.
+tut_damage_a|Kerusakan. Seorang musuh akan menembak Anda. Perhatikan bilah baja Anda di bawah.
+tut_damage_b|Ambil peti hijau dengan melintas di atasnya. Peti itu memperbaiki baja Anda.
+tut_damage_c|Ambil peti biru. Isi ulang cepat selama dua puluh detik.
+tut_follow_a|Semua ikut saya. Tekan ikon tiga panah di sebelah kiri, dan sekutu Anda akan mengikuti.
+tut_follow_b|Sekarang kendarai tank ke tanda kuning. Sekutu Anda akan ikut dan menemani Anda.
+tut_focus_a|Semua ke sasaran. Bidik tank musuh dan tekan ikon sasaran dengan dua panah.
+tut_focus_b|Semua sekutu Anda menyerang apa yang Anda tandai. Tunggu sampai mereka menghancurkannya.
+tut_final|Pertempuran terakhir. Bersama dua sekutu Anda, hancurkan ketiga tank musuh dan depot. Gunakan semua yang telah Anda pelajari.
+tut_end|Tutorial selesai. Kerja bagus. Sekarang Anda bisa memulai kampanye.

@@ -1,0 +1,37 @@
+name: Audio fetch
+
+# Herramienta puntual: busca o descarga grabaciones de época (dominio público o licencia libre)
+# desde Wikimedia Commons, porque solo las máquinas de GitHub tienen salida libre a internet.
+on:
+  push:
+    branches: [audio]
+    paths: ["tools/audio_fetch/**", ".github/workflows/audio-fetch.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Descargar, convertir y transcribir
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q faster-whisper
+          git clone -q --depth 1 --branch audio-raw "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" audio_raw || mkdir -p audio_raw
+          rm -rf audio_raw/.git
+          grep -v "NO DESCARGADO" audio_raw/README.txt > keep.txt || true
+          mv keep.txt audio_raw/README.txt
+          python3 tools/audio_fetch/fetch.py
+          ls -la audio_raw
+      - name: Publicar en la rama audio-raw
+        run: |
+          cd audio_raw
+          git init -q
+          git checkout -q -b audio-raw
+          git add -A
+          git -c user.name="audio" -c user.email="audio@users.noreply.github.com" commit -q -m "Grabaciones descargadas de Wikimedia Commons"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" audio-raw

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "marder3"
+history = "Cazacarros alemán ligero de casamata abierta sobre el chasis del Panzer 38(t). Algunas versiones montaban cañones soviéticos capturados; combatió también en el Norte de África."
+display_name = "MARDER III"
+nation = "DE"
+color = Color(1, 0.5, 0.1, 1)
+description = "Cazacarros ligero de casamata abierta."
+tier = 2
+cost = 2
+unlock_wave = 3
+body_scale = 1.0
+score_value = 200
+max_speed = 8.0
+acceleration = 10.0
+hull_turn_speed = 0.9
+turret_turn_speed = 1.0
+max_armor = 35.0
+reload_time = 4.0
+damage = 22.0
+projectile_speed = 160.0
+detect_range = 170.0
+attack_range = 130.0
+fire_cone_deg = 2.0
+aim_error_deg = 2.0
+lead_factor = 0.8
+retreat_fraction = 0.25
+preferred_range = 110.0
+casemate = true
+open_top = true
+hull_proportions = Vector3(0.9, 0.9, 0.95)
+barrel_length = 1.5
+muzzle_brake = true
+traverse_limit_deg = 15.0

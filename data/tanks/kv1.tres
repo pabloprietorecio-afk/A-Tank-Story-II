@@ -1,0 +1,34 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "kv1"
+history = "Tanque pesado soviético de 1939, con un blindaje que los cañones alemanes de 1941 apenas podían perforar. Era lento y su transmisión daba problemas."
+display_name = "KV-1"
+nation = "SU"
+color = Color(1, 0.5, 0.1, 1)
+description = "Pesado soviético cuadrado, casi impenetrable."
+tier = 2
+cost = 3
+unlock_wave = 4
+body_scale = 1.25
+score_value = 250
+max_speed = 6.0
+acceleration = 8.0
+hull_turn_speed = 0.6
+turret_turn_speed = 0.9
+max_armor = 160.0
+reload_time = 3.4
+damage = 20.0
+projectile_speed = 80.0
+detect_range = 110.0
+attack_range = 70.0
+fire_cone_deg = 4.0
+aim_error_deg = 3.5
+lead_factor = 0.6
+retreat_fraction = 0.0
+hull_proportions = Vector3(1.1, 1.15, 1.1)
+turret_scale = 1.3
+barrel_length = 0.9

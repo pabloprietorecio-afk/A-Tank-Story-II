@@ -1,0 +1,51 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+
+config/name="A Tank Story"
+config/icon="res://assets/icon.png"
+boot_splash/image="res://assets/splash.png"
+boot_splash/fullsize=true
+boot_splash/bg_color=Color(0, 0, 0, 1)
+run/main_scene="res://levels/main_menu.tscn"
+config/features=PackedStringArray("4.7", "Mobile")
+config/version="0.0.0"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=0
+
+[internationalization]
+
+locale/fallback="es"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+anti_aliasing/quality/msaa_3d=1
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile=2
+
+[shader_globals]
+
+fx_sun_dir={
+"type": "vec3",
+"value": Vector3(0.47, 0.47, 0.75)
+}
+fx_sun_color={
+"type": "vec3",
+"value": Vector3(1.2, 0.75, 0.4)
+}
+fx_ambient={
+"type": "vec3",
+"value": Vector3(0.22, 0.17, 0.16)
+}
+fx_fog_density={
+"type": "float",
+"value": 0.004
+}

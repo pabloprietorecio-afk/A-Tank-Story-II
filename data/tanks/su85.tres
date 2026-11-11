@@ -1,0 +1,37 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "su85"
+history = "Cazacarros soviético sobre chasis de T-34 con cañón de 85 mm en casamata: para apuntar gira todo el vehículo. Apareció en 1943 para enfrentarse a los nuevos pesados alemanes."
+display_name = "SU-85"
+nation = "SU"
+color = Color(1, 0.5, 0.1, 1)
+description = "Cazacarros soviético de casamata: gira el casco para apuntar."
+tier = 2
+cost = 2
+unlock_wave = 3
+body_scale = 1.0
+score_value = 200
+max_speed = 8.0
+acceleration = 10.0
+hull_turn_speed = 0.9
+turret_turn_speed = 1.0
+max_armor = 45.0
+reload_time = 4.0
+damage = 22.0
+projectile_speed = 160.0
+detect_range = 170.0
+attack_range = 130.0
+fire_cone_deg = 2.0
+aim_error_deg = 2.0
+lead_factor = 0.8
+retreat_fraction = 0.25
+preferred_range = 110.0
+casemate = true
+hull_proportions = Vector3(1.05, 0.95, 1.0)
+sloped = true
+barrel_length = 1.6
+traverse_limit_deg = 12.0

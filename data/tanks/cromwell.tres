@@ -1,0 +1,35 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "cromwell"
+history = "Tanque crucero británico con motor Meteor, derivado del Merlin de los Spitfire, que lo hacía uno de los más rápidos de la guerra. Combatió en Normandía en 1944 con un cañón de 75 mm."
+display_name = "CROMWELL"
+nation = "UK"
+color = Color(1, 0.85, 0.2, 1)
+description = "Crucero británico, rápido y de perfil cuadrado."
+tier = 1
+cost = 1
+unlock_wave = 1
+body_scale = 1.0
+score_value = 100
+max_speed = 12.0
+acceleration = 12.0
+hull_turn_speed = 1.0
+turret_turn_speed = 1.4
+max_armor = 50.0
+reload_time = 2.8
+damage = 10.0
+projectile_speed = 85.0
+detect_range = 100.0
+attack_range = 60.0
+fire_cone_deg = 5.0
+aim_error_deg = 5.0
+lead_factor = 0.4
+retreat_fraction = 0.2
+hull_proportions = Vector3(1.0, 0.9, 1.05)
+turret_scale = 1.0
+barrel_length = 0.9
+bow_mg = true

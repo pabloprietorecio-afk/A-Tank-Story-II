@@ -1,0 +1,36 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "elefant"
+history = "Cazacarros gigante sobre el chasis Porsche del Tiger, con un 88 mm larguísimo. Se construyeron unos 90; debutó en Kursk en 1943 y sufrió mucho sin ametralladora para defenderse de la infantería."
+display_name = "ELEFANT"
+nation = "DE"
+color = Color(1, 0.15, 0.1, 1)
+description = "Cazacarros gigante de casamata con un 88 larguísimo."
+tier = 3
+cost = 5
+unlock_wave = 8
+body_scale = 1.5
+score_value = 600
+max_speed = 4.5
+acceleration = 6.0
+hull_turn_speed = 0.45
+turret_turn_speed = 0.7
+max_armor = 420.0
+reload_time = 2.8
+damage = 24.0
+projectile_speed = 95.0
+detect_range = 130.0
+attack_range = 85.0
+fire_cone_deg = 5.0
+aim_error_deg = 3.0
+lead_factor = 0.6
+retreat_fraction = 0.0
+casemate = true
+hull_proportions = Vector3(1.15, 1.1, 1.35)
+barrel_length = 2.0
+muzzle_brake = true
+traverse_limit_deg = 12.0

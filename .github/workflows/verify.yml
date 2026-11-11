@@ -1,0 +1,86 @@
+name: Verify
+
+# Comprobación visual en ramas de trabajo: ejecuta el juego con un renderizador por software
+# (con el mismo método de dibujo que usa el teléfono, «mobile»), guarda capturas de tanques,
+# escenarios y partidas, y falla si hay errores de scripts o shaders.
+on:
+  push:
+    branches-ignore: [main, audio, audio-raw, verify-shots]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  GODOT_VERSION: "4.7.2"
+  GODOT_CHANNEL: "stable"
+
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalar Godot y renderizador por software
+        run: |
+          BASE="https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-${GODOT_CHANNEL}"
+          curl -fsSL -o godot.zip "$BASE/Godot_v${GODOT_VERSION}-${GODOT_CHANNEL}_linux.x86_64.zip"
+          unzip -q godot.zip
+          sudo mv "Godot_v${GODOT_VERSION}-${GODOT_CHANNEL}_linux.x86_64" /usr/local/bin/godot
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb mesa-vulkan-drivers libvulkan1 libgl1-mesa-dri
+
+      - name: Importar recursos
+        run: godot --headless --import 2>&1 | tee import.log || true
+
+      - name: Misiones nuevas, navegación de los aliados y tutorial completo (sin gráficos)
+        env:
+          SHOTS_ONLY: "story nav tutorial sky ai ctf fit"
+        run: |
+          timeout 900 godot --headless --path . --audio-driver Dummy res://tools/verify/shots.tscn 2>&1 | tee logic.log || true
+          grep -E "^(NAV|STORY|CAMPAIGN|REACH|CLIMB|TUTORIAL|SKY|AI|CTF|FIT)" logic.log || true
+
+      - name: Capturas
+        run: |
+          timeout 1500 xvfb-run -a -s "-screen 0 1280x720x24" godot --path . --audio-driver Dummy --rendering-driver vulkan --rendering-method mobile --resolution 1280x720 res://tools/verify/shots.tscn 2>&1 | tee run.log || true
+          ls -la shots_out || true
+
+      - name: Errores de scripts y shaders
+        run: |
+          grep -nE "SCRIPT ERROR|SHADER ERROR|Parse Error|Compile Error|Failed to load script|Invalid (call|access|assignment|operands|get index)|^ERROR" run.log import.log logic.log | head -150 > errors.txt || true
+          cat errors.txt
+          grep -q "SHOTS DONE" run.log || { echo "Las capturas no terminaron"; tail -60 run.log; exit 1; }
+          grep -q "SHOTS DONE" logic.log || { echo "La prueba de misiones y navegación no terminó"; tail -60 logic.log; exit 1; }
+          grep -q "NAV RESULT fallos de la navegación con rodeo: 0" logic.log || { echo "Algún tanque con rodeo no llegó a su destino"; exit 1; }
+          grep -q "REACH RESULT inaccesibles: 0" logic.log || { echo "Hay objetivos u objetos inaccesibles"; exit 1; }
+          grep -q "TUTORIAL RESULT lecciones sin completar: 0" logic.log || { echo "Alguna lección del tutorial no se completa"; grep "^TUTORIAL" logic.log; exit 1; }
+          grep -q "CTF RESULT la máquina juega a capturar: OK" logic.log || { echo "Los tanques de la máquina no van a por la bandera"; grep "^CTF" logic.log; exit 1; }
+          grep -q "AI RESULT tanques que no reaccionan al fuego: 0" logic.log || { echo "Un tanque enemigo no reacciona cuando le disparan"; grep "^AI" logic.log; exit 1; }
+          grep -q "SKY RESULT derribos dentro del campo: 0 de" logic.log || { echo "Un avión derribado cae dentro del campo"; exit 1; }
+          if grep -q "SKY MAL" logic.log; then exit 1; fi
+          grep -q "CLIMB RESULT.*(OK)" logic.log || { echo "Un tanque puede subirse a una colina"; exit 1; }
+          grep -q "FIT RESULT páginas del menú que no caben en pantalla: 0 de" logic.log || { echo "Alguna página del menú no cabe en la pantalla sin desplazarla"; grep "^FIT" logic.log; exit 1; }
+          if grep -qE "SCRIPT ERROR|SHADER ERROR|Parse Error|Compile Error" errors.txt; then exit 1; fi
+
+      - name: Publicar capturas en la rama verify-shots
+        if: always()
+        run: |
+          mkdir -p shots_out
+          cp run.log import.log logic.log errors.txt shots_out/ 2>/dev/null || true
+          cd shots_out
+          git init -q
+          git checkout -q -b verify-shots
+          git add -A
+          git -c user.name="verify" -c user.email="verify@users.noreply.github.com" commit -q -m "Capturas de ${GITHUB_SHA::7}"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" verify-shots
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: shots
+          path: |
+            shots_out
+            run.log
+            import.log
+            errors.txt

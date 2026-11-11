@@ -1,0 +1,90 @@
+name: Build APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  GODOT_VERSION: "4.7.2"
+  GODOT_CHANNEL: "stable"
+  BASE_VERSION: "0.1"
+  ANDROID_PLATFORM: "35"
+  ANDROID_BUILD_TOOLS: "35.0.1"
+  ANDROID_NDK: "28.1.13356709"
+  ANDROID_CMAKE: "3.10.2.4988404"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Versión (sube sola en cada compilación)
+        run: |
+          echo "VERSION_CODE=${{ github.run_number }}" >> "$GITHUB_ENV"
+          echo "VERSION_NAME=${BASE_VERSION}.${{ github.run_number }}" >> "$GITHUB_ENV"
+
+      - name: Instalar Godot y plantillas de exportación
+        run: |
+          BASE="https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-${GODOT_CHANNEL}"
+          curl -fsSL -o godot.zip "$BASE/Godot_v${GODOT_VERSION}-${GODOT_CHANNEL}_linux.x86_64.zip"
+          curl -fsSL -o templates.tpz "$BASE/Godot_v${GODOT_VERSION}-${GODOT_CHANNEL}_export_templates.tpz"
+          unzip -q godot.zip
+          sudo mv "Godot_v${GODOT_VERSION}-${GODOT_CHANNEL}_linux.x86_64" /usr/local/bin/godot
+          mkdir -p ~/.local/share/godot/export_templates/${GODOT_VERSION}.${GODOT_CHANNEL}
+          unzip -q templates.tpz -d tpl
+          mv tpl/templates/* ~/.local/share/godot/export_templates/${GODOT_VERSION}.${GODOT_CHANNEL}/
+
+      - name: Instalar Android SDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" \
+            "platform-tools" "build-tools;${ANDROID_BUILD_TOOLS}" "platforms;android-${ANDROID_PLATFORM}" \
+            "cmake;${ANDROID_CMAKE}" "ndk;${ANDROID_NDK}"
+
+      - name: Configurar Godot para Android
+        run: |
+          godot --headless --editor --quit || true
+          SETTINGS=$(ls ~/.config/godot/editor_settings-*.tres | head -1)
+          echo "Ajustes: $SETTINGS"
+          {
+            echo "export/android/android_sdk_path = \"$ANDROID_HOME\""
+            echo "export/android/java_sdk_path = \"$JAVA_HOME\""
+          } >> "$SETTINGS"
+
+      - name: Poner versión en el proyecto
+        run: |
+          sed -i "s/^version\/code=.*/version\/code=${VERSION_CODE}/" export_presets.cfg
+          sed -i "s/^version\/name=.*/version\/name=\"${VERSION_NAME}\"/" export_presets.cfg
+          sed -i "s/^config\/version=.*/config\/version=\"${VERSION_NAME}\"/" project.godot
+
+      - name: Importar recursos
+        run: godot --headless --import || true
+
+      - name: Exportar APK
+        env:
+          GODOT_ANDROID_KEYSTORE_DEBUG_PATH: ${{ github.workspace }}/ci/debug.keystore
+          GODOT_ANDROID_KEYSTORE_DEBUG_USER: tankahead
+          GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
+        run: |
+          mkdir -p build
+          godot --headless --export-debug "Android" "build/ATankStory-${VERSION_NAME}.apk"
+          ls -la build
+
+      - name: Publicar en Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${VERSION_NAME}" "build/ATankStory-${VERSION_NAME}.apk" \
+            --title "A Tank Story ${VERSION_NAME}" \
+            --notes "Compilación automática ${VERSION_NAME} (versionCode ${VERSION_CODE}), commit ${GITHUB_SHA::7}"

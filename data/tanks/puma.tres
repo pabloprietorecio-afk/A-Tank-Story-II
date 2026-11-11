@@ -1,0 +1,40 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://data/definitions/tank_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "puma"
+history = "Blindado alemán de ocho ruedas con cañón de 50 mm. Muy rápido y con gran autonomía; solo se fabricaron alrededor de un centenar."
+display_name = "SD.KFZ. 234 PUMA"
+nation = "DE"
+color = Color(1, 0.85, 0.2, 1)
+description = "Blindado alemán de ocho ruedas, muy rápido."
+has_tracks = false
+tier = 1
+cost = 1
+unlock_wave = 1
+body_scale = 0.75
+score_value = 80
+max_speed = 20.0
+acceleration = 22.0
+hull_turn_speed = 2.0
+turret_turn_speed = 2.2
+max_armor = 25.0
+reload_time = 1.8
+damage = 5.0
+projectile_speed = 100.0
+detect_range = 120.0
+attack_range = 45.0
+fire_cone_deg = 7.0
+aim_error_deg = 7.0
+lead_factor = 0.2
+retreat_fraction = 0.0
+preferred_range = 35.0
+wheels = 8
+hull_proportions = Vector3(0.8, 0.75, 1.15)
+sloped = true
+turret_scale = 0.75
+barrel_length = 0.9
+muzzle_brake = true
+has_antenna = true

@@ -1,0 +1,69 @@
+air_clear|Attacco aereo respinto. Il cielo è libero.
+air_phase|Attacco aereo! Caccia e bombardieri nemici in arrivo. Abbatteteli!
+armor_low|Blindatura critica! Un altro colpo e siamo finiti!
+bonus|Bonus recuperato! Ben fatto, comandante.
+cease_fire|Cessate il fuoco! Cessate il fuoco! Là dentro ci sono dei prigionieri!
+commander|Comandante nemico abbattuto. Il loro attacco sta crollando.
+flag_capture|Bandiera catturata! Ottimo lavoro!
+flag_lost|Il nemico ha la nostra bandiera! Riprendetela!
+flag_taken|Hai la bandiera nemica! Riportala alla base!
+hit_1|Siamo stati colpiti!
+hit_2|Siamo sotto tiro!
+kill_1|Bersaglio distrutto!
+kill_2|L'ho preso!
+kill_3|Carro nemico a terra!
+liberation|Il filo spinato è caduto. I prigionieri sono liberi!
+locked|Bersaglio agganciato.
+missile|Missile lanciato!
+mission_fail|Missione fallita. Abbiamo perso il carro.
+mission_start|La missione ha inizio. Buona caccia, comandante.
+mission_win|Missione compiuta! Un lavoro eccezionale.
+objective|Obiettivo distrutto.
+pickup|Rifornimenti recuperati.
+radar_1|Contatto! Carri nemici sul radar.
+radar_2|Il radar segnala nemici davanti a noi. Restate vigili.
+raid_1|Bombardieri nemici sopra di noi! Uscite dalla zona rossa!
+raid_2|Raid aereo! Muovetevi, muovetevi, muovetevi!
+reinforcements|Rinforzi nemici in arrivo.
+shot_down_1|Aereo abbattuto!
+shot_down_2|Uno in meno!
+strike_1|Bombardamento aereo richiesto. State giù con la testa.
+strike_2|Bombardieri in arrivo. State lontani.
+strike_denied|Richiesta negata. Il bersaglio è troppo vicino alla vostra posizione.
+wave_clear|Ondata respinta. Ricaricate e riparate.
+wave_start|Nuova ondata in arrivo. Tenetevi pronti.
+follow_on|Tutti con me! Ricevuto, vi seguiamo.
+follow_off|Tutti liberi. Agite di vostra iniziativa.
+focus_fire|Tutti sul mio bersaglio! Fuoco!
+focus_none|Nessun bersaglio in vista.
+tut_move_a|Qui la base. Cominciamo. Tocca il lato sinistro dello schermo e spingi verso l'alto. Guida fino alla boa gialla.
+tut_move_b|Bene. Ora la retromarcia. Tira il joystick verso il basso e arretra di qualche metro.
+tut_turn|Per girare lo scafo, muovi il joystick a sinistra o a destra. Passa per le tre boe a zigzag.
+tut_turret|La torretta. Trascina il dito sulla metà destra dello schermo e porta il mirino sulle tre sagome.
+tut_fire_a|Mira a una sagoma e premi il pulsante di fuoco.
+tut_fire_b|Il cannone sta ricaricando. La barra sotto il mirino si riempie. Quando diventa verde, spara fino a distruggere una sagoma.
+tut_easy_a|Movimento facile. Quando avanzi, lo scafo segue il cannone. Mira alla boa e spingi solo in avanti.
+tut_easy_b|Si disattiva nelle impostazioni, sotto movimento facile. Vai allo stesso modo fino alla seconda boa.
+tut_camera|Premi il pulsante della videocamera per cambiare vista: cabina, posteriore e posteriore lontana.
+tut_radar|Il radar. I punti sono nemici. I quadrati blu, alleati. Il rombo, il tuo obiettivo. Gli anelli sono edifici con bonus e le croci sono bonus. Vai fino al rombo.
+tut_enemy_a|Carro nemico di addestramento, fermo. Distruggilo. Serviranno più colpi.
+tut_enemy_b|Ora uno in movimento. Mira un po' davanti e distruggilo.
+tut_assist_a|Mira automatica. Apri le impostazioni, attivala e premi continua.
+tut_assist_b|Passa il mirino sul nemico. Si aggancia da solo e il mirino diventa arancione.
+tut_assist_c|Agganciato. Sopra il mirino vedi la sua blindatura e il suo attacco. Premi rilascia bersaglio per lasciarlo.
+tut_zoom_a|Premi zoom per usare il binocolo.
+tut_zoom_b|I pulsanti missile e aereo compaiono solo con lo zoom. Colpisci la sagoma lontana.
+tut_missile|Missile guidato. Aggancia il nemico con il mirino e, con lo zoom attivo, premi missile.
+tut_strike_a|Bombardamento alleato. Con lo zoom attivo, mira al deposito vicino e premi aereo.
+tut_strike_b|Negato. A meno di trenta metri le bombe ti colpirebbero. Richiedilo sul deposito lontano.
+tut_strike_c|Ora richiedilo sul deposito vicino e ascolta la risposta della base.
+tut_raid|Bombardamento nemico. Quando vedi la zona rossa, esci prima che il conto alla rovescia arrivi a zero.
+tut_damage_a|Danni. Un nemico sta per spararti. Guarda la tua barra della blindatura, in basso.
+tut_damage_b|Raccogli la cassa verde passandoci sopra. Ripara la tua blindatura.
+tut_damage_c|Raccogli la cassa blu. Ricarica rapida per venti secondi.
+tut_follow_a|Tutti con me. Premi l'icona con le tre frecce, a sinistra, e i tuoi alleati ti seguiranno.
+tut_follow_b|Ora guida fino alla boa gialla. I tuoi alleati verranno con te e ti accompagneranno.
+tut_focus_a|Tutti sul bersaglio. Mira al carro nemico e premi l'icona del bersaglio con due frecce.
+tut_focus_b|Tutti i tuoi alleati attaccano ciò che hai indicato. Aspetta che lo distruggano.
+tut_final|Combattimento finale. Con i tuoi due alleati, distruggi i tre carri nemici e il deposito. Usa tutto ciò che hai imparato.
+tut_end|Tutorial completato. Ben fatto. Ora puoi iniziare la campagna.

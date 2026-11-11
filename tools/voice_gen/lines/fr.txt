@@ -1,0 +1,69 @@
+air_clear|Attaque aérienne repoussée. Le ciel est dégagé.
+air_phase|Attaque aérienne ! Chasseurs et bombardiers ennemis en approche. Abattez-les !
+armor_low|Blindage critique ! Un impact de plus et c'est fini !
+bonus|Bonus récupéré ! Bien joué, commandant.
+cease_fire|Cessez le feu ! Cessez le feu ! Il y a des prisonniers là-dedans !
+commander|Commandant ennemi abattu. Leur attaque s'effondre.
+flag_capture|Drapeau capturé ! Excellent travail !
+flag_lost|L'ennemi a notre drapeau ! Reprenez-le !
+flag_taken|Vous avez le drapeau ennemi ! Ramenez-le à la base !
+hit_1|On est touchés !
+hit_2|On essuie des tirs !
+kill_1|Cible détruite !
+kill_2|Touché !
+kill_3|Char ennemi à terre !
+liberation|Les barbelés sont tombés. Les prisonniers sont libres !
+locked|Cible verrouillée.
+missile|Missile parti !
+mission_fail|Mission échouée. Nous avons perdu le char.
+mission_start|La mission commence. Bonne chasse, commandant.
+mission_win|Mission accomplie ! Travail remarquable.
+objective|Objectif détruit.
+pickup|Ravitaillement récupéré.
+radar_1|Contact ! Chars ennemis au radar.
+radar_2|Le radar signale des hostiles devant. Restez vigilants.
+raid_1|Bombardiers ennemis au-dessus de nous ! Sortez de la zone rouge !
+raid_2|Raid aérien ! Bougez, bougez, bougez !
+reinforcements|Renforts ennemis en approche.
+shot_down_1|Avion abattu !
+shot_down_2|Encore un de moins !
+strike_1|Frappe aérienne demandée. Baissez la tête.
+strike_2|Bombardiers en route. Écartez-vous.
+strike_denied|Demande refusée. La cible est trop proche de votre position.
+wave_clear|Vague repoussée. Rechargez et réparez.
+wave_start|Nouvelle vague en approche. Tenez bon.
+follow_on|Tous avec moi ! Reçu, on vous suit.
+follow_off|Tous libres. Agissez à votre guise.
+focus_fire|Tous sur ma cible ! Feu !
+focus_none|Aucune cible en vue.
+tut_move_a|Ici la base. On commence. Touchez le côté gauche de l'écran et poussez vers le haut. Allez jusqu'à la balise jaune.
+tut_move_b|Bien. Maintenant, marche arrière. Tirez le joystick vers le bas et reculez de quelques mètres.
+tut_turn|Pour tourner la coque, déplacez le joystick à gauche ou à droite. Passez par les trois balises en zigzag.
+tut_turret|La tourelle. Faites glisser le doigt sur la moitié droite de l'écran et placez le viseur sur les trois cibles.
+tut_fire_a|Visez une cible et appuyez sur le bouton de tir.
+tut_fire_b|Le canon recharge. La barre sous le viseur se remplit. Quand elle devient verte, tirez jusqu'à détruire une cible.
+tut_easy_a|Déplacement facile. En avançant, la coque suit le canon. Visez la balise et poussez simplement vers l'avant.
+tut_easy_b|On peut le désactiver dans les réglages, sous déplacement facile. Allez de la même façon jusqu'à la deuxième balise.
+tut_camera|Appuyez sur le bouton caméra pour changer de vue : cabine, arrière et arrière éloignée.
+tut_radar|Le radar. Les points sont des ennemis. Les carrés bleus, des alliés. Le losange, votre objectif. Les anneaux sont des bâtiments avec bonus, et les croix, des bonus. Allez jusqu'au losange.
+tut_enemy_a|Char ennemi d'entraînement, immobile. Détruisez-le. Il faudra plusieurs tirs.
+tut_enemy_b|Maintenant, un char en mouvement. Visez un peu devant et détruisez-le.
+tut_assist_a|Visée automatique. Ouvrez les réglages, activez-la et appuyez sur continuer.
+tut_assist_b|Passez le viseur sur l'ennemi. Il se verrouille tout seul et le viseur devient orange.
+tut_assist_c|Verrouillé. Au-dessus du viseur, vous voyez son blindage et son attaque. Appuyez sur libérer la cible pour la lâcher.
+tut_zoom_a|Appuyez sur zoom pour utiliser les jumelles.
+tut_zoom_b|Les boutons missile et avion n'apparaissent qu'avec le zoom. Touchez la cible éloignée.
+tut_missile|Missile guidé. Verrouillez l'ennemi avec le viseur et, le zoom activé, appuyez sur missile.
+tut_strike_a|Bombardement allié. Le zoom activé, visez le dépôt proche et appuyez sur avion.
+tut_strike_b|Refusé. À moins de trente mètres, les bombes vous atteindraient. Demandez-le sur le dépôt éloigné.
+tut_strike_c|Maintenant, demandez-le sur le dépôt proche et écoutez la réponse de la base.
+tut_raid|Bombardement ennemi. Quand vous voyez la zone rouge, sortez-en avant que le compte à rebours n'atteigne zéro.
+tut_damage_a|Dégâts. Un ennemi va vous tirer dessus. Surveillez votre barre de blindage, en bas.
+tut_damage_b|Ramassez la caisse verte en passant dessus. Elle répare votre blindage.
+tut_damage_c|Ramassez la caisse bleue. Rechargement rapide pendant vingt secondes.
+tut_follow_a|Tous avec moi. Appuyez sur l'icône aux trois flèches, à gauche, et vos alliés vous suivront.
+tut_follow_b|Maintenant, conduisez jusqu'à la balise jaune. Vos alliés viendront avec vous et vous accompagneront.
+tut_focus_a|Tous sur la cible. Visez le char ennemi et appuyez sur l'icône de la cible avec deux flèches.
+tut_focus_b|Tous vos alliés attaquent ce que vous avez désigné. Attendez qu'ils le détruisent.
+tut_final|Combat final. Avec vos deux alliés, détruisez les trois chars ennemis et le dépôt. Utilisez tout ce que vous avez appris.
+tut_end|Didacticiel terminé. Bien joué. Vous pouvez maintenant commencer la campagne.

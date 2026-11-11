@@ -1,0 +1,69 @@
+air_clear|Ataque aéreo repelido. O céu está limpo.
+air_phase|Ataque aéreo! Caças e bombardeiros inimigos se aproximando. Derrube todos!
+armor_low|Blindagem crítica! Mais um impacto e acabou!
+bonus|Bônus coletado! Muito bem, comandante.
+cease_fire|Cessar fogo! Cessar fogo! Há prisioneiros lá dentro!
+commander|Comandante inimigo abatido. O ataque deles desmorona.
+flag_capture|Bandeira capturada! Excelente trabalho!
+flag_lost|O inimigo está com a nossa bandeira! Recuperem!
+flag_taken|Você pegou a bandeira inimiga! Leve para a base!
+hit_1|Fomos atingidos!
+hit_2|Estamos sob fogo!
+kill_1|Alvo destruído!
+kill_2|Acertou em cheio!
+kill_3|Tanque inimigo abatido!
+liberation|O arame farpado caiu. Os prisioneiros estão livres!
+locked|Alvo travado.
+missile|Míssil lançado!
+mission_fail|Missão fracassada. Perdemos o tanque.
+mission_start|A missão começa. Boa caçada, comandante.
+mission_win|Missão cumprida! Trabalho notável.
+objective|Objetivo destruído.
+pickup|Suprimentos recolhidos.
+radar_1|Contato! Tanques inimigos no radar.
+radar_2|O radar indica hostis à frente. Fiquem atentos.
+raid_1|Bombardeiros inimigos sobre nós! Saiam da zona vermelha!
+raid_2|Ataque aéreo! Mexam-se, mexam-se, mexam-se!
+reinforcements|Reforços inimigos se aproximando.
+shot_down_1|Avião abatido!
+shot_down_2|Mais um a menos!
+strike_1|Ataque aéreo solicitado. Abaixem a cabeça.
+strike_2|Bombardeiros a caminho. Afastem-se.
+strike_denied|Pedido negado. O alvo está perto demais da sua posição.
+wave_clear|Onda repelida. Recarregue e repare.
+wave_start|Nova onda se aproximando. Aguentem firme.
+follow_on|Todos comigo! Entendido, estamos te seguindo.
+follow_off|Todos livres. Ajam como acharem melhor.
+focus_fire|Todos no meu alvo! Fogo!
+focus_none|Nenhum alvo à vista.
+tut_move_a|Aqui é a base. Vamos começar. Toque o lado esquerdo da tela e empurre para cima. Vá até a baliza amarela.
+tut_move_b|Muito bem. Agora, marcha à ré. Puxe o joystick para baixo e recue alguns metros.
+tut_turn|Para girar o casco, mova o joystick para a esquerda ou para a direita. Passe pelas três balizas em zigue-zague.
+tut_turret|A torre. Deslize o dedo pela metade direita da tela e coloque a mira sobre os três alvos.
+tut_fire_a|Mire em um alvo e aperte o botão de disparo.
+tut_fire_b|O canhão está recarregando. A barra sob a mira vai enchendo. Quando ficar verde, atire até destruir um alvo.
+tut_easy_a|Movimento fácil. Ao avançar, o casco acompanha o canhão. Mire na baliza e empurre apenas para a frente.
+tut_easy_b|Dá para desativar nas configurações, em movimento fácil. Vá do mesmo jeito até a segunda baliza.
+tut_camera|Aperte o botão de câmera para mudar a vista: cabine, traseira e traseira distante.
+tut_radar|O radar. Os pontos são inimigos. Os quadrados azuis, aliados. O losango, o seu objetivo. Os anéis são prédios com prêmio, e as cruzes, prêmios. Vá até o losango.
+tut_enemy_a|Tanque inimigo de treino, parado. Destrua-o. Vão ser necessários vários disparos.
+tut_enemy_b|Agora, um tanque em movimento. Mire um pouco à frente e destrua-o.
+tut_assist_a|Mira automática. Abra as configurações, ative e aperte continuar.
+tut_assist_b|Passe a mira sobre o inimigo. Ele trava sozinho e a mira fica laranja.
+tut_assist_c|Travado. Acima da mira você vê a blindagem e o ataque dele. Aperte soltar alvo para largá-lo.
+tut_zoom_a|Aperte o zoom para usar o binóculo.
+tut_zoom_b|Os botões de míssil e avião só aparecem com o zoom. Acerte o alvo distante.
+tut_missile|Míssil guiado. Trave o inimigo com a mira e, com o zoom ativo, aperte míssil.
+tut_strike_a|Bombardeio aliado. Com o zoom ativo, mire no depósito próximo e aperte avião.
+tut_strike_b|Negado. A menos de trinta metros, as bombas atingiriam você. Peça sobre o depósito distante.
+tut_strike_c|Agora peça sobre o depósito próximo e ouça a resposta da base.
+tut_raid|Bombardeio inimigo. Quando vir a zona vermelha, saia dela antes que a contagem chegue a zero.
+tut_damage_a|Dano. Um inimigo vai atirar em você. Fique de olho na sua barra de blindagem, embaixo.
+tut_damage_b|Recolha a caixa verde passando por cima. Ela repara a sua blindagem.
+tut_damage_c|Recolha a caixa azul. Recarga rápida por vinte segundos.
+tut_follow_a|Todos comigo. Aperte o ícone das três setas, à esquerda, e os seus aliados vão te seguir.
+tut_follow_b|Agora, dirija até a baliza amarela. Os seus aliados vão com você e te acompanham.
+tut_focus_a|Todos no alvo. Mire no tanque inimigo e aperte o ícone do alvo com duas setas.
+tut_focus_b|Todos os seus aliados atacam o que você marcou. Espere até que o destruam.
+tut_final|Combate final. Com os seus dois aliados, destrua os três tanques inimigos e o depósito. Use tudo o que aprendeu.
+tut_end|Tutorial concluído. Muito bem. Agora você pode começar a campanha.
